@@ -1,0 +1,148 @@
+/* MODERNIZED SB ADMIN - Bethel International Workplace 
+   Based on SB Admin Structure + Modern Card UI
+*/
+
+:root {
+    --sidebar-width: 240px;
+    --top-nav-height: 60px;
+    --primary: #0d6efd;
+    --bg-light: #f4f7f6;
+    --radius: 12px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Global Layout Overhaul --- */
+#wrapper {
+    padding-left: 0;
+    background-color: var(--bg-light);
+    min-height: 100vh;
+}
+
+#page-wrapper {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent; /* Let the body bg show through */
+}
+
+@media (min-width: 768px) {
+    #wrapper {
+        padding-left: var(--sidebar-width);
+    }
+    #page-wrapper {
+        padding: 30px;
+    }
+}
+
+/* --- Top Navigation (Clean & Glassy) --- */
+.navbar {
+    border: none !important;
+    background: #1b1b1b !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+    min-height: var(--top-nav-height);
+}
+
+.top-nav {
+    padding: 0 15px;
+}
+
+.top-nav > li > a {
+    color: #6c757d !important;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.top-nav > li > a:hover {
+    color: var(--primary) !important;
+    background: var(--primary-soft) !important;
+}
+
+/* --- Side Navigation (The "Cool" Sidebar) --- */
+@media (min-width: 768px) {
+    .side-nav {
+        position: fixed;
+        top: 0;
+        left: var(--sidebar-width);
+        width: var(--sidebar-width);
+        margin-left: calc(-1 * var(--sidebar-width));
+        border: none;
+        overflow-y: auto;
+        background-color: #ffffff !important; /* Changed from #222 */
+        bottom: 0;
+        padding-top: 20px;
+        box-shadow: 5px 0 15px rgba(0,0,0,0.02);
+        z-index: 1000;
+    }
+
+    .side-nav > li {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .side-nav > li > a {
+        width: 100% !important;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        color: #4b5563 !important;
+        padding: 12px 15px !important;
+        transition: all 0.3s;
+    }
+
+    .side-nav li a:hover, 
+    .side-nav li a:focus {
+        background-color: rgba(13, 110, 253, 0.08) !important;
+        color: var(--primary) !important;
+        transform: translateX(5px);
+    }
+}
+
+/* --- Panels turned into Modern Cards --- */
+.panel {
+    border: none !important;
+    border-radius: var(--radius) !important;
+    box-shadow: var(--shadow);
+    margin-bottom: 25px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.panel-heading {
+    padding: 20px !important;
+    border: none !important;
+    font-weight: 700;
+}
+
+.huge {
+    font-size: 2.5rem;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+
+/* --- Color Accents --- */
+.bg-primary { background: linear-gradient(135deg, #0d6efd, #0b5ed7) !important; }
+.bg-success { background: linear-gradient(135deg, #27ae60, #2ecc71) !important; }
+.bg-warning { background: linear-gradient(135deg, #f39c12, #f1c40f) !important; }
+.bg-danger  { background: linear-gradient(135deg, #e74c3c, #c0392b) !important; }
+
+/* --- Panel Footer (Clean styling) --- */
+.panel-footer {
+    background-color: #ffffff !important;
+    border-top: 1px solid #f8f9fa !important;
+    padding: 12px 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    transition: all 0.2s;
+}
+
+.panel-footer:hover {
+    background-color: #f8f9fa !important;
+    color: var(--primary);
+}
+
+/* --- Charts --- */
+.flot-chart {
+    padding: 20px;
+    background: #fff;
+    border-radius: var(--radius);
+}

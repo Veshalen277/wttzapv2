@@ -1,0 +1,36 @@
+[19-Jan-2026 18:59:43 Africa/Johannesburg] PHP Warning:  include(../bulletins/widget.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 18:59:43 Africa/Johannesburg] PHP Warning:  include(../bulletins/widget.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 18:59:43 Africa/Johannesburg] PHP Warning:  include(): Failed opening '../bulletins/widget.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 19:59:20 Africa/Johannesburg] PHP Warning:  include(../bulletins/widget.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 19:59:20 Africa/Johannesburg] PHP Warning:  include(../bulletins/widget.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 19:59:20 Africa/Johannesburg] PHP Warning:  include(): Failed opening '../bulletins/widget.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 21:06:26 Africa/Johannesburg] PHP Warning:  include(../bulletins/widget.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 21:06:26 Africa/Johannesburg] PHP Warning:  include(../bulletins/widget.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 21:06:26 Africa/Johannesburg] PHP Warning:  include(): Failed opening '../bulletins/widget.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 21:07:03 Africa/Johannesburg] PHP Warning:  include(../bulletins/widget.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 21:07:03 Africa/Johannesburg] PHP Warning:  include(../bulletins/widget.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 21:07:03 Africa/Johannesburg] PHP Warning:  include(): Failed opening '../bulletins/widget.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 124
+[19-Jan-2026 21:13:30 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Call to undefined function get_mtd_financials() in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php:57
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php on line 57
+[19-Jan-2026 21:25:37 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Call to undefined function get_recent_orders() in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php on line 61
+[19-Jan-2026 23:20:04 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Call to undefined function get_recent_orders() in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php on line 61
+[20-Jan-2026 16:06:37 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Call to undefined function get_recent_orders() in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php on line 61
+[20-Jan-2026 16:07:44 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Call to undefined function get_recent_orders() in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php on line 61
+[20-Jan-2026 16:43:51 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Call to undefined function get_recent_orders() in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php:61
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/admin/admin-stats-report/index.php on line 61

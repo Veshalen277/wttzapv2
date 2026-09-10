@@ -1,0 +1,10 @@
+[09-Sep-2026 03:57:26 Africa/Johannesburg] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/bethelin/wttzap/dashboard/views/navigation.php:24) in /home/bethelin/wttzap/dashboard/employee/pages/emp_profile.submit.php on line 414
+[09-Sep-2026 03:57:26 Africa/Johannesburg] PHP Stack trace:
+[09-Sep-2026 03:57:26 Africa/Johannesburg] PHP   1. {main}() /home/bethelin/wttzap/dashboard/employee/emp_profile.php:0
+[09-Sep-2026 03:57:26 Africa/Johannesburg] PHP   2. require() /home/bethelin/wttzap/dashboard/employee/emp_profile.php:11
+[09-Sep-2026 03:57:26 Africa/Johannesburg] PHP   3. header($header = 'Location: /dashboard/employee/emp_profile.php') /home/bethelin/wttzap/dashboard/employee/pages/emp_profile.submit.php:414
+[09-Sep-2026 12:13:02 Africa/Johannesburg] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/bethelin/wttzap/dashboard/views/navigation.php:27) in /home/bethelin/wttzap/dashboard/employee/pages/emp_profile.submit.php on line 414
+[09-Sep-2026 12:13:02 Africa/Johannesburg] PHP Stack trace:
+[09-Sep-2026 12:13:02 Africa/Johannesburg] PHP   1. {main}() /home/bethelin/wttzap/dashboard/employee/emp_profile.php:0
+[09-Sep-2026 12:13:02 Africa/Johannesburg] PHP   2. require() /home/bethelin/wttzap/dashboard/employee/emp_profile.php:11
+[09-Sep-2026 12:13:02 Africa/Johannesburg] PHP   3. header($header = 'Location: /dashboard/employee/emp_profile.php') /home/bethelin/wttzap/dashboard/employee/pages/emp_profile.submit.php:414
