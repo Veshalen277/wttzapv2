@@ -1,0 +1,782 @@
+/* #load-screen {
+background-image:url(../images/header-back.png);
+background-position: fixed;
+z-index: 10000;
+top:0px;
+width: 100%;
+height: 1600px; 
+
+}
+*/
+body {
+
+  font-size: 14px;
+
+	
+}
+
+/* Light mode (default) */
+main {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    main {
+        background-color: #121212;
+        color: white;
+    }
+}
+
+
+
+
+/* Light Mode */
+main.light-mode {
+    background-color: white;
+    color: black;
+}
+
+/* Dark Mode */
+main.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+main{
+padding:20px;
+background-color:cream;
+}
+
+
+#loading {
+  width: 500px;
+  height: 500px;
+  margin: 10% auto;
+  background: url(../images/loader.gif);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.message-board {
+  padding: 20px;
+}
+
+.message-board h2 {
+  color: #d9534f;
+}
+
+.message-board .row {
+  margin: 0;
+}
+
+.message-board .col-md-9 {
+  padding: 0;
+}
+
+.message-board .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.message-board .table th,
+.message-board .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.message-board .table th {
+  background-color: #f4f4f4;
+}
+
+.message-board .table td {
+  background-color: #fff;
+}
+
+.message-board .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px 0;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #5bc0de;
+  text-decoration: none;
+}
+
+.message-board .btn-danger {
+  background-color: #d9534f;
+}
+
+.message-board .btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid #5bc0de;
+  color: #5bc0de;
+}
+
+.message-board .btn-primary {
+  background-color: #0275d8;
+}
+
+.message-board .pagination {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.message-board .pagination a {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.message-board .pagination .btn-primary {
+  background-color: #0275d8;
+  color: #fff;
+}
+
+.message-board .pagination .btn-outline-primary {
+  background-color: transparent;
+  border: 1px solid #0275d8;
+  color: #0275d8;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .message-board .col-md-9,
+  .message-board .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .message-board .table th,
+  .message-board .table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .message-board .reply-textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .message-board .pagination a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* From Header  */
+
+/* Navigation  */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 5px;
+  }
+
+  /* Stack navigation menu items vertically on small screens */
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin: 0;
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 2px;
+  }
+}
+
+/* CSS styles for feedback messages */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.message-list {
+  margin-top: 20px;
+}
+
+.message-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.message-item:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Common dropdown menu styles */
+.dropdown-menu {
+  position: static; /* Position dropdown menu below the parent item */
+  float: none; /* Remove float to ensure proper stacking */
+  box-shadow: none; /* Remove default shadow for a cleaner look */
+  border: 1px solid #ddd; /* Optional: add a border for better visibility */
+  border-radius: 0; /* Optional: remove border radius for a more square look */
+  padding: 0; /* Remove default padding */
+  margin-top: 5px; /* Space between dropdown and parent item */
+  width: 100%; /* Make dropdown full width for better usability */
+  background-color: #fcf9f9; /* Ensure background color is white for better readability */
+  color:#333;
+}
+
+/* Dropdown item styling */
+.dropdown-item a ul li {
+  padding: 10px; /* Increase padding for easier touch navigation */
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove underline from links */
+  display: block; /* Ensure items are block-level for full-width clicks */
+  font-size: 14px; /* Set font size to 13px */
+}
+/* Hover state for dropdown items */
+.dropdown-item:hover {
+  background-color: #fcf9f9; /* Ensure background color is white for better readability */
+  color:#333;
+}
+
+/* Styles specifically for desktop screens */
+@media (min-width: 769px) {
+  .dropdown-menu {
+    float: right; /* Float dropdown to the right for desktop view */
+    width: auto; /* Adjust width to fit content */
+    margin-top: 0; /* Remove top margin for desktop view */
+  }
+
+  .dropdown-item {
+    padding: 5px 10px; /* Adjust padding for desktop */
+    font-size: 14px;
+    color:#333;
+    text-align:start
+  }
+}
+
+/* Styles specifically for mobile screens */
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static; /* Keep dropdown static for mobile */
+    width: 100%; /* Full width on mobile for better usability */
+    margin-top: 5px; /* Space between dropdown and parent item */
+  }
+
+  .dropdown-item {
+    padding: 10px; /* Increase padding for easier touch navigation */
+  }
+}
+
+/* Suggestion board  */
+/* General Container Styling */
+.container-fluid {
+  padding: 20px; /* Consistent padding */
+}
+
+.bg-white {
+  background-color: #fff; /* White background */
+}
+
+.border {
+  border: 1px solid #ddd; /* Light gray border */
+}
+
+/* Shadow and Border Styling */
+.shadow-sm {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+/* Form and Button Styling */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn-danger:focus,
+.btn-danger.focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.5);
+}
+
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin: 0;
+}
+
+/* General navbar styling */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+  background-color: #fcf9f9; /* Ensure background color is white for better readability */
+  color:#333;
+  border: 1px solid #ddd; /* Border for dropdown */
+ 
+  padding: 0; /* Remove padding if needed */
+}
+
+/* Specific styling for dropdown menu items */
+.navbar-nav .dropdown-menu li a {
+  font-size: 12px; /* Adjust this value as needed for dropdown items */
+}
+
+/* Show dropdown on hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Additional styling for dropdown items on hover */
+.navbar-nav .dropdown-menu li a:hover {
+  background-color: #fff; /* Background on hover */
+  color: #242323;
+  text-decoration: none; /* Remove underline */
+}
+
+/* General nav item styling */
+.navbar-nav .nav-item a {
+  font-size: 14px; /* Default font size for other nav items */
+}
+
+/* Navbar toggler styling (optional) */
+.navbar-toggler {
+  border: none; /* Remove border if needed */
+}
+
+/* Active nav link styling */
+.nav-link.active {
+  font-weight: bold; /* Highlight active link */
+}
+/* Make sure dropdowns work properly on smaller screens */
+.navbar-nav .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+}
+.dropdown:hover .dropdown-menu li ul a {
+  display: block;
+  background-color: #fcf9f9; /* Ensure background color is white for better readability */
+  color:#333;
+}
+.navbar-toggler {
+  border: none;
+}
+.nav-link.active {
+  font-weight: bold;
+}
+.nav-item li ul a {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact {
+  background: #f9f9f9;
+  padding: 25px;
+  margin: 50px 0;
+}
+
+#contact h3 {
+  color: #f96;
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #0cf;
+  color: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #09c;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #999;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.btn {
+  padding: 2px 5px; /* Adjust padding for smaller buttons */
+  font-size: 12px; /* Smaller font size */
+  border-radius: 2px; /* Rounded corners */
+  color: #d4d0d0 !important;
+}
+
+/* Optionally, customize specific button styles */
+.btn-primary {
+  background-color: #3b5998; /* Facebook blue */
+  border-color: #3b5998;
+}
+
+.btn-danger {
+  background-color: #d9534f; /* Danger color */
+  border-color: #d9534f;
+}
+
+/* Breakpoint for the navbar  */
+@media (max-width: 1086px) {
+  .navbar {
+    /* Custom styles for the navbar when below 1086px */
+    background-color: #f8f9fa; /* Change background color if needed */
+  }
+
+  .navbar-nav .nav-link {
+    /* Example: Change text color or other styles */
+    color: #007bff; /* Change to your desired color */
+  }
+
+  .navbar-text {
+    /* Example: Adjust font size for logged-in notice */
+    font-size: 0.9rem; /* Adjust as needed */
+  }
+}
+
+.badge {
+  background-color: #d9534f; /* Primary color */
+  color: #ffffff; /* White text for contrast */
+  padding: 0.4em 0.8em; /* Slightly adjusted padding for a more balanced look */
+  border-radius: 1.5em; /* More rounded corners for a modern feel */
+  font-size: 0.9em; /* Slightly larger font size */
+  font-weight: 500; /* Medium font weight for better emphasis */
+  display: inline-flex; /* Use flex for better alignment */
+  align-items: center; /* Center the content vertically */
+  text-transform: uppercase; /* Uppercase text for a bolder look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.badge:hover {
+  background-color: #c52121; /* Darker shade on hover */
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+.card-header {
+  padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
+  margin-bottom: 0;
+  color: #000 !important;
+  background-color: white;
+  border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+/* Header */
+.header-bg {
+    background-color: #2C3E50;  /* Dark Navy Blue */
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #2C3E50;  /* Dark Navy Blue */
+    color: #ffffff;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: #ffffff;  /* White links */
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+    color: #FF6F61;  /* Vibrant Coral on hover */
+}
+
+/* Main Content */
+.main-content-bg {
+    background-color: #F4F1EC;  /* Soft Light Beige */
+    color: #333333;  /* Dark Charcoal Gray text */
+}
+
+/* Footer */
+.footer-bg {
+    background-color: #4E5B31;  /* Muted Earthy Green */
+    color: #ffffff;
+}
+
+/* Links */
+a {
+    color: #1A7F7C;  /* Medium Teal */
+}
+
+a:hover {
+    color: #1A7F7C;  /* Teal on hover */
+    text-decoration: underline;
+}
+
+/* Generic Container Styling */
+.container {
+    padding: 20px;
+}
+
+/* Add some space to main content and footer */
+.main-content-bg, .footer-bg {
+    padding: 40px 0;
+}
+
+/* Main Content */
+.main-bg {
+    background-color: #F4F1EC;  /* Soft Light Beige */
+    color: #333333;  /* Dark Charcoal Gray text */
+    padding: 40px 0;  /* Spacing around the content */
+}
+
+/* Links in Main Content */
+.main-bg a {
+    color: #1A7F7C;  /* Medium Teal */
+}
+
+.main-bg a:hover {
+    color: #1A7F7C;  /* Teal on hover */
+    text-decoration: underline;
+}
+
+/* Main Content Button Styling */
+.main-bg .btn-primary {
+    background-color: #FF6F61;  /* Vibrant Coral */
+    border-color: #FF6F61;
+}
+
+/*.main-bg .btn-primary:hover {
+    background-color: #FF8A7B;  /* Slightly lighter Coral */
+    border-color: #FF8A7B;
+}
+*/
+.main-bg .btn-secondary {
+    background-color: #A8D5BA;  /* Soft Mint Green */
+    border-color: #A8D5BA;
+}
+
+.main-bg .btn-secondary:hover {
+    background-color: #A2C9A2;  /* Slightly darker Mint Green */
+    border-color: #A2C9A2;
+}
+/* Customize the Dropdown Text and Background Colors */
+
+/* Dropdown items */
+.navbar-custom .navbar-nav .nav-item .dropdown-menu {
+    background-color: #ffffff;  /* White background for the dropdown */
+    border-color: #1A7F7C;      /* Optional: Dark Green border around dropdown */
+}
+
+/* Change the text color of dropdown items */
+.navbar-custom .navbar-nav .nav-item .dropdown-item {
+    color: #1A7F7C;  /* Dark Green text */
+}
+
+/* Hover effect for dropdown items */
+.navbar-custom .navbar-nav .nav-item .dropdown-item:hover {
+    background-color: #A8D5BA;  /* Soft Mint Green on hover */
+    color: #333333;  /* Dark text color on hover */
+}
+
+/* Active item in the dropdown */
+.navbar-custom .navbar-nav .nav-item .dropdown-item.active,
+.navbar-custom .navbar-nav .nav-item .dropdown-item:active {
+    background-color: #FF6F61;  /* Vibrant Coral */
+    color: #ffffff;  /* White text for active item */
+}
+
+
+
+  .navbar-nav .dropdown-menu {
+            background-color: #333 !important;
+        }
+
+        /* Background color on hover */
+        .navbar-nav .dropdown-menu .dropdown-item:hover {
+            background-color: #f5f5dc !important; /* Cream color */
+        }
+
+        /* Optional: Change the text color on hover for better visibility */
+        .navbar-nav .dropdown-menu .dropdown-item:hover {
+            color: #333 !important; /* Change text color to dark gray */
+        }

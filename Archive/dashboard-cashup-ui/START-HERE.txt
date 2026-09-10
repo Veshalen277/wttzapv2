@@ -1,0 +1,1 @@
+Back up matching files, then merge the dashboard folder into your existing installation. Read dashboard/reports/README.md. No database migration. Existing calculations and form contracts are preserved; PHP/database and visual testing remain required on staging.

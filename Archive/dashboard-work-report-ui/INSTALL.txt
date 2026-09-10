@@ -1,0 +1,28 @@
+WORK REPORT UI UPDATE
+
+Installation
+Back up the matching files, then merge the included dashboard folder into your
+existing dashboard folder. Replace matching files, not the whole directory.
+No SQL migration is needed. Refresh the work-report page after upload.
+
+Design
+- Focused report editor with a prominent submission action.
+- Muted teal accents, consistent spacing, and responsive panels.
+- Profile, responsibilities, and notices beside the editor on wide screens.
+- Expandable team activity and session details.
+- Word count, visible draft status, labelled fields, and keyboard focus states.
+- Existing report field names, upload field, and autosave endpoint retained.
+- Includes the previous blank-page compatibility helper and exception handler.
+
+Scope
+This replaces employee/pages/emp_profile.view.php using the source supplied in
+this conversation. If that view was subsequently changed on the server, merge
+those changes before uploading. Shared header/sidebar, points, database schema,
+and report submission handler are not changed.
+
+Validation
+JavaScript syntax, expected submission fields, optional-widget isolation calls,
+asset inclusion, and archive integrity checked. PHP execution and live database
+validation were unavailable. No browser rendering test was performed.
+After installation, verify loading an existing draft, autosaving, attaching a
+file, clearing a draft, and submitting a report with your normal test account.

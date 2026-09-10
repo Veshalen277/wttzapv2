@@ -1,0 +1,42 @@
+[27-Apr-2025 13:10:55 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:10:55 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:10:55 UTC] PHP Warning:  Undefined variable $conn in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:10:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/wttzap/public_html/dashboard/orders/stats.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:11:52 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:11:52 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:11:52 UTC] PHP Warning:  Undefined variable $conn in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:11:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/wttzap/public_html/dashboard/orders/stats.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:11:53 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:11:53 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:11:53 UTC] PHP Warning:  Undefined variable $conn in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:11:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/wttzap/public_html/dashboard/orders/stats.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:11:54 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:11:54 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:11:54 UTC] PHP Warning:  Undefined variable $conn in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:11:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/wttzap/public_html/dashboard/orders/stats.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:12:14 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:12:14 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:12:14 UTC] PHP Warning:  Undefined variable $conn in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:12:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/wttzap/public_html/dashboard/orders/stats.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:12:15 UTC] PHP Warning:  include(db.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:12:15 UTC] PHP Warning:  include(): Failed opening 'db.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/wttzap/public_html/dashboard/orders/stats.php on line 3
+[27-Apr-2025 13:12:15 UTC] PHP Warning:  Undefined variable $conn in /home/wttzap/public_html/dashboard/orders/stats.php on line 6
+[27-Apr-2025 13:12:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/wttzap/public_html/dashboard/orders/stats.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/orders/stats.php on line 6

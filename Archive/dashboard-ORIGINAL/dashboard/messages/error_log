@@ -1,0 +1,124 @@
+[24-Sep-2024 00:26:50 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:26:50 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:26:58 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:26:58 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:28:39 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:28:39 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:28:45 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:28:45 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[23-Sep-2024 22:28:54 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_message.php on line 3
+[23-Sep-2024 22:28:54 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_message.php on line 3
+[24-Sep-2024 00:28:57 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:28:57 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:29:19 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:29:19 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:29:27 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:29:27 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:30:39 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:30:39 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:34:17 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'private_messages.posted_at' in 'field list' in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php:42
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php(42): mysqli_query()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php on line 42
+[24-Sep-2024 00:51:52 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'private_messages' is specified twice, both as a target for 'INSERT' and as a separate source for data in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php:54
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php(54): mysqli_query()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php on line 54
+[24-Sep-2024 00:53:31 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'private_messages' is specified twice, both as a target for 'INSERT' and as a separate source for data in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php:54
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php(54): mysqli_query()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php on line 54
+[24-Sep-2024 00:53:35 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'private_messages' is specified twice, both as a target for 'INSERT' and as a separate source for data in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php:54
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php(54): mysqli_query()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php on line 54
+[24-Sep-2024 00:53:44 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'private_messages' is specified twice, both as a target for 'INSERT' and as a separate source for data in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php:54
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php(54): mysqli_query()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_message.php on line 54
+[24-Sep-2024 00:54:34 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:54:34 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:59:17 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 00:59:17 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 02:21:24 Africa/Johannesburg] PHP Warning:  include(message_sidebar.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 02:21:24 Africa/Johannesburg] PHP Warning:  include(): Failed opening 'message_sidebar.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 180
+[24-Sep-2024 15:20:55 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bethelin_work`.`private_messages`, CONSTRAINT `private_messages_ibfk_3` FOREIGN KEY (`parent_message_id`) REFERENCES `private_messages` (`id`)) in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_messages.php:56
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_messages.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_messages.php on line 56
+[24-Sep-2024 19:32:00 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`bethelin_work`.`replies`, CONSTRAINT `replies_ibfk_1` FOREIGN KEY (`message_id`) REFERENCES `messages` (`id`)) in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php:47
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php(47): mysqli_query()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/message_board.php on line 47
+[24-Sep-2024 20:24:22 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/create_group.php on line 2
+[24-Sep-2024 20:24:22 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/create_group.php on line 2
+[24-Sep-2024 20:24:22 UTC] PHP Warning:  include(footer.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/create_group.php on line 40
+[24-Sep-2024 20:24:22 UTC] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/create_group.php on line 40
+[24-Sep-2024 20:27:26 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/group_management.php on line 2
+[24-Sep-2024 20:27:26 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/group_management.php on line 2
+[24-Sep-2024 20:27:26 UTC] PHP Warning:  Undefined variable $con in /home/bethelin/workplace.bethelinternational/dashboard/messages/group_management.php on line 47
+[24-Sep-2024 20:27:26 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_query(): Argument #1 ($mysql) must be of type mysqli, null given in /home/bethelin/workplace.bethelinternational/dashboard/messages/group_management.php:47
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/group_management.php(47): mysqli_query()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/group_management.php on line 47
+[24-Sep-2024 20:28:42 UTC] PHP Warning:  include(header.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/manage_group_members.php on line 2
+[24-Sep-2024 20:28:42 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/manage_group_members.php on line 2
+[24-Sep-2024 20:28:42 UTC] PHP Warning:  include(footer.php): Failed to open stream: No such file or directory in /home/bethelin/workplace.bethelinternational/dashboard/messages/manage_group_members.php on line 99
+[24-Sep-2024 20:28:42 UTC] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/bethelin/workplace.bethelinternational/dashboard/messages/manage_group_members.php on line 99
+[25-Sep-2024 19:00:02 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'description' in 'field list' in /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php:11
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php(11): mysqli->prepare()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php on line 11
+[25-Sep-2024 19:00:33 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'description' in 'field list' in /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php:11
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php(11): mysqli->prepare()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php on line 11
+[25-Sep-2024 19:04:18 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`bethelin_work`.`groups`, CONSTRAINT `groups_ibfk_1` FOREIGN KEY (`created_by`) REFERENCES `users_tbl` (`id`)) in /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php:14
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php(14): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/messages/add_group.php on line 14
+[26-Sep-2024 23:48:07 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'is_read' in 'where clause' in /home/bethelin/workplace.bethelinternational/dashboard/inc/sidebar.php:7
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/inc/sidebar.php(7): mysqli_query()
+#1 /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_messages.php(87): include('/home/bethelin/...')
+#2 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/inc/sidebar.php on line 7
+[27-Sep-2024 00:22:40 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'is_read' in 'where clause' in /home/bethelin/workplace.bethelinternational/dashboard/inc/sidebar.php:7
+Stack trace:
+#0 /home/bethelin/workplace.bethelinternational/dashboard/inc/sidebar.php(7): mysqli_query()
+#1 /home/bethelin/workplace.bethelinternational/dashboard/messages/view_private_messages.php(87): include('/home/bethelin/...')
+#2 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/inc/sidebar.php on line 7
+[27-Sep-2024 00:23:31 Africa/Johannesburg] PHP Warning:  Undefined variable $message_count in /home/bethelin/workplace.bethelinternational/dashboard/inc/sidebar.php on line 20
+[27-Sep-2024 00:47:29 Africa/Johannesburg] PHP Warning:  Undefined variable $message_count in /home/bethelin/workplace.bethelinternational/dashboard/inc/sidebar.php on line 20
+[03-Oct-2024 11:39:53 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'is_read' in 'where clause' in /home/wttzap/public_html/dashboard/inc/sidebar.php:10
+Stack trace:
+#0 /home/wttzap/public_html/dashboard/inc/sidebar.php(10): mysqli_query()
+#1 /home/wttzap/public_html/dashboard/messages/message_board.php(194): include('/home/wttzap/pu...')
+#2 {main}
+  thrown in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 10
+[03-Oct-2024 11:40:04 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'is_read' in 'where clause' in /home/wttzap/public_html/dashboard/inc/sidebar.php:10
+Stack trace:
+#0 /home/wttzap/public_html/dashboard/inc/sidebar.php(10): mysqli_query()
+#1 /home/wttzap/public_html/dashboard/messages/private_messages.php(6): include('/home/wttzap/pu...')
+#2 {main}
+  thrown in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 10
+[05-Oct-2024 10:31:16 Africa/Johannesburg] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'wttzap_tasks.notifications' doesn't exist in /home/wttzap/public_html/dashboard/inc/sidebar.php:18
+Stack trace:
+#0 /home/wttzap/public_html/dashboard/inc/sidebar.php(18): mysqli_query()
+#1 /home/wttzap/public_html/dashboard/messages/message_board.php(226): include('/home/wttzap/pu...')
+#2 {main}
+  thrown in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 18
+[20-Jan-2026 16:47:40 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 137
+[20-Jan-2026 16:48:24 Africa/Johannesburg] PHP Parse error:  Unclosed '{' on line 102 in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 150

@@ -1,0 +1,27 @@
+/* Calm, compact content styling; existing business markup and data stay intact. */
+body.portal-app { font-family: 'Segoe UI', Arial, sans-serif; color: #38363e; font-size: 13px; line-height: 1.5; }
+body.portal-app > main.main-bg { min-width: 0; min-height: calc(100vh - 96px); margin: 0 !important; padding: 16px !important; background: #f1f6f9 !important; border: 0 !important; border-radius: 0 !important; box-shadow: none !important; }
+.portal-app main > .container, .portal-app main > .container-fluid { max-width: none; padding-left: 0; padding-right: 0; }
+.portal-app main .card, .portal-app main .bg-white.border, .portal-app main .message-board, .portal-app main .checklist_container, .portal-app main .quick-links-card { border: 1px solid #e7e8ed !important; border-radius: 2px !important; background-color: white; box-shadow: 0 1px 3px #20233214 !important; }
+.portal-app main h2, .portal-app main h3 { font-size: 17px; font-weight: 500; color: #37343e; letter-spacing: 0; }
+.portal-app main h4, .portal-app main h5 { font-weight: 500; }
+.portal-app main .card-header { background: white; padding: 13px 16px; border-bottom: 1px solid #ededf1; }
+.portal-app .btn { border-radius: 3px !important; padding: 7px 13px !important; font-size: 12px; font-weight: 500 !important; transition: background-color .15s, box-shadow .15s !important; }
+.portal-app .btn:hover { transform: none; opacity: 1; box-shadow: none; }
+.portal-app .btn-primary { background-color: #4c455c !important; }
+.portal-app .btn-danger { background-color: #c35664 !important; }
+.portal-app .btn-success { background-color: #43836e !important; }
+.portal-app .badge { animation: none !important; border-radius: 3px !important; box-shadow: none; }
+.portal-app .table { border-radius: 0; overflow: visible; }
+.portal-app .table th { background-color: #f8f9fb !important; color: #77727f; font-size: 11px; font-weight: 500; text-transform: none; letter-spacing: 0; padding: 11px 12px !important; }
+.portal-app .table td { padding: 11px 12px !important; border-top-color: #eeeef2 !important; font-size: 12px; }
+.portal-app input[type="text"], .portal-app textarea { border: 1px solid #dcdde3 !important; background: #fff !important; border-radius: 3px; padding: 8px 10px !important; }
+.portal-app input[type="text"]:focus, .portal-app textarea:focus { border-color: #91839f !important; box-shadow: 0 0 0 2px #91839f20 !important; }
+.portal-app .dropdown-item { color: #423b4c !important; font-size: 12px; }
+.portal-app .dropdown-item:hover { background-color: #f3f1f6 !important; }
+.portal-app > footer { background: #fff !important; color: #77727e !important; border-top: 1px solid #e5e7eb; padding: 20px 16px !important; font-size: 11px; }
+.portal-app > footer .container-fluid { border: 0 !important; }
+.portal-app > footer h5 { font-size: 12px; color: #514a5e; }
+.portal-app > footer .text-light { color: #514a5e !important; }
+@media (max-width: 900px) { body.portal-app > main.main-bg { padding: 12px !important; } }
+@media (prefers-reduced-motion: reduce) { .portal-app *, .portal-app *::before, .portal-app *::after { animation: none !important; transition: none !important; } }

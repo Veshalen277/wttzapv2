@@ -1,0 +1,1 @@
+Install the previously supplied developer refactor, merge dashboard/ into your existing installation, then import dashboard/forums/database/install.sql into the live dashboard database. Read dashboard/forums/README.md for roles, tests, removal and limitations. This is a patch, not a complete dashboard. No database changes have been executed.

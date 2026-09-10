@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" data-theme-user="guest">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Sign in · WTTZap</title>
+  <script src="assets/login-appearance.js?v="></script>
+  <link rel="stylesheet" href="assets/wtt-login.css?v=">
+  <script src="assets/wtt-login.js?v=" defer></script>
+</head>
+<body>
+  <div class="stadium-backdrop" aria-hidden="true"></div>
+  <header class="login-topbar">
+    <a class="login-brand" href="/" aria-label="WTTZap home"><span class="brand-symbol" aria-hidden="true"></span>WTT<span>Zap</span></a>
+    <label class="appearance-control"><span>Appearance</span><select id="theme-select" aria-label="Appearance"><option value="system">System</option><option value="light">Light</option><option value="dark">Dark</option><option value="morning">Morning</option><option value="afternoon">Afternoon</option></select></label>
+  </header>
+  <main class="login-main">
+    <section class="login-card" aria-labelledby="login-title">
+      <div class="login-card-brand"><span class="brand-symbol" aria-hidden="true"></span><div><strong>WTTZap</strong><span>EMPLOYEE WORKSPACE</span></div></div>
+      <div class="login-card-body">
+        <p class="login-eyebrow">YOUR WORK. YOUR PROGRESS.</p>
+        <h1 id="login-title">Welcome back.</h1>
+        <p class="login-intro">Sign in to your workplace.</p>
+        
+        <form method="post" id="login-form">
+          <input type="hidden" name="csrf_token" value="">
+          <label for="login-user">User ID</label>
+          <input id="login-user" name="user_id" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" value="" required>
+          <div class="password-label"><label for="login-password">Password</label><a href="/forgot_password.php">Forgot password?</a></div>
+          <div class="password-control"><input id="login-password" name="user_pass" type="password" autocomplete="current-password" required><button id="show-password" type="button" aria-controls="login-password" aria-label="Show password" aria-pressed="false" hidden>Show</button></div>
+          <button class="login-submit" type="submit" name="login_btn">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+      </div>
+      <div class="login-card-footer">Work reports <span aria-hidden="true">·</span> Team discussions <span aria-hidden="true">·</span> Your progress</div>
+    </section>
+    <p class="login-caption">One place to contribute, connect, and grow.</p>
+  </main>
+  <footer class="login-footer"><span>WTTZap Employee Portal</span><span>Design preview · sign-in disabled</span></footer>
+<script>document.getElementById("login-form").addEventListener("submit", function(event) { event.preventDefault(); alert("Design preview only. Install index.php on your PHP server to sign in."); });</script></body>
+</html>
+

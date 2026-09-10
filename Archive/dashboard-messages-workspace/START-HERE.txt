@@ -1,0 +1,1 @@
+Read dashboard/messages/README.md. Back up matching files, then merge dashboard/ into the existing installation. No new migration. This patch updates public messageboard/conversation screens; private/group pages remain separate. Run the documented staging checks before deploying to production.

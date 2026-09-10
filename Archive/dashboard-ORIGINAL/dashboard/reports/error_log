@@ -1,0 +1,6 @@
+[07-May-2025 11:33:04 UTC] PHP Warning:  require_once(../tcpdf/tcpdf.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/reports/export_report_pdf.php on line 2
+[07-May-2025 11:33:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../tcpdf/tcpdf.php' (include_path='.:/opt/alt/php83/usr/share/pear:/opt/alt/php83/usr/share/php:/usr/share/pear:/usr/share/php') in /home/wttzap/public_html/dashboard/reports/export_report_pdf.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/reports/export_report_pdf.php on line 2
+[09-Oct-2025 11:33:36 Africa/Johannesburg] PHP Notice:  session_start(): Ignoring session_start() because a session is already active (started from /home/wttzap/public_html/dashboard/header.php on line 8) in /home/wttzap/public_html/dashboard/navigation.php on line 420

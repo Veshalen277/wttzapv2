@@ -1,0 +1,33 @@
+[20-Jan-2026 13:27:16 UTC] PHP Warning:  require_once(/home/wttzap/public_html/dashboard/employee/../post_react.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/employee/post_react.php on line 3
+[20-Jan-2026 13:27:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/wttzap/public_html/dashboard/employee/../post_react.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wttzap/public_html/dashboard/employee/post_react.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/wttzap/public_html/dashboard/employee/post_react.php on line 3
+[20-Jan-2026 16:58:36 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected token "<" in /home/wttzap/public_html/dashboard/inc/sidebar.php on line 79
+[02-Mar-2026 21:12:32 UTC] PHP Warning:  include(/home/wttzap/public_html/dashboard/employee/pages/../header.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/employee/pages/emp_profile.bootstrap.php on line 2
+[02-Mar-2026 21:12:32 UTC] PHP Warning:  include(/home/wttzap/public_html/dashboard/employee/pages/../header.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/employee/pages/emp_profile.bootstrap.php on line 2
+[02-Mar-2026 21:12:32 UTC] PHP Warning:  include(): Failed opening '/home/wttzap/public_html/dashboard/employee/pages/../header.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wttzap/public_html/dashboard/employee/pages/emp_profile.bootstrap.php on line 2
+[02-Mar-2026 21:12:32 UTC] PHP Warning:  require(/home/wttzap/public_html/dashboard/employee/pages/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/employee/pages/emp_profile.bootstrap.php on line 3
+[02-Mar-2026 21:12:32 UTC] PHP Warning:  require(/home/wttzap/public_html/dashboard/employee/pages/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/employee/pages/emp_profile.bootstrap.php on line 3
+[02-Mar-2026 21:12:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/wttzap/public_html/dashboard/employee/pages/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wttzap/public_html/dashboard/employee/pages/emp_profile.bootstrap.php:3
+Stack trace:
+#0 /home/wttzap/public_html/dashboard/employee/emp_profile.php(2): require()
+#1 {main}
+  thrown in /home/wttzap/public_html/dashboard/employee/pages/emp_profile.bootstrap.php on line 3
+[02-Mar-2026 23:19:48 Africa/Johannesburg] PHP Warning:  require_once(/home/wttzap/public_html/dashboard/employee/reactions_helper.php): Failed to open stream: No such file or directory in /home/wttzap/public_html/dashboard/employee/employee_wall.php on line 2
+[02-Mar-2026 23:19:48 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Failed opening required '/home/wttzap/public_html/dashboard/employee/reactions_helper.php' (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/wttzap/public_html/dashboard/employee/employee_wall.php:2
+Stack trace:
+#0 /home/wttzap/public_html/dashboard/employee/pages/emp_profile.bootstrap.php(59): require()
+#1 /home/wttzap/public_html/dashboard/employee/emp_profile.php(2): require('/home/wttzap/pu...')
+#2 {main}
+  thrown in /home/wttzap/public_html/dashboard/employee/employee_wall.php on line 2
+[03-Mar-2026 20:50:31 Africa/Johannesburg] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/wttzap/public_html/dashboard/employee/reactions_helper.php on line 63
+[03-Mar-2026 18:51:19 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/wttzap/public_html/dashboard/post_react.php on line 71
+[18-Mar-2026 16:58:10 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /home/bethelin/workplace.bethelinternational/dashboard/employee/my_profile.php:145
+Stack trace:
+#0 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/employee/my_profile.php on line 145
+[18-Mar-2026 18:12:23 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /home/bethelin/workplace.bethelinternational/dashboard/employee/my_profile.php:145
+Stack trace:
+#0 {main}
+  thrown in /home/bethelin/workplace.bethelinternational/dashboard/employee/my_profile.php on line 145

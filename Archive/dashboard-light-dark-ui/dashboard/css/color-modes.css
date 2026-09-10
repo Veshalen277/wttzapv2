@@ -1,0 +1,56 @@
+/* Shared appearance layer. Light preserves the existing design. */
+:root { color-scheme:light; }
+:root[data-theme=dark] {
+  color-scheme:dark;
+  --cm-bg:#101720; --cm-panel:#18222e; --cm-raised:#202d3b;
+  --cm-text:#e4ebf4; --cm-muted:#a9b7c9; --cm-border:#354354;
+  --cm-accent:#94d5cc;
+  --portal-ink:var(--cm-text); --portal-muted:var(--cm-muted);
+  --portal-accent:var(--cm-accent); --portal-border:var(--cm-border);
+  --bs-body-bg:var(--cm-panel); --bs-body-color:var(--cm-text);
+  --bs-border-color:var(--cm-border); --bs-secondary-color:var(--cm-muted);
+  --bs-tertiary-bg:var(--cm-raised); --bs-emphasis-color:var(--cm-text);
+}
+.portal-theme-toggle { display:flex; align-items:center; gap:7px; padding:7px 10px; border:1px solid #d9dfe6; border-radius:6px; background:#fff; color:#465269; font:500 11px/1.4 'Segoe UI',Arial,sans-serif; cursor:pointer; white-space:nowrap; }
+.portal-theme-toggle:hover { background:#edf2f6; }
+.portal-theme-toggle:focus-visible { outline:3px solid #679b9a; outline-offset:3px; }
+@media(max-width:600px) { .portal-theme-toggle span { display:none; } .portal-theme-toggle { min-height:36px; min-width:36px; justify-content:center; } }
+html[data-theme=dark] body.portal-app,
+html[data-theme=dark] body.portal-app > main.main-bg { background:var(--cm-bg) !important; color:var(--cm-text); }
+html[data-theme=dark] :is(.portal-header,.portal-sidebar,.portal-profile-menu,.portal-search-results,.portal-skip) { background:var(--cm-panel); color:var(--cm-text); border-color:var(--cm-border); }
+html[data-theme=dark] :is(.portal-topbar,.portal-profile summary,.portal-profile-heading,.portal-profile-menu .portal-logout,.portal-search-results a) { border-color:var(--cm-border); }
+html[data-theme=dark] :is(.portal-brand,.portal-brand-accent,.portal-icon-link,.portal-sidebar-toggle,.portal-panel h2,.portal-profile-menu a,.portal-search-results a,.portal-sidebar-bottom strong) { color:var(--cm-text); }
+html[data-theme=dark] :is(.portal-brand small,.portal-section,.portal-submenu-link,.portal-section-hint,.portal-sidebar-caption,.portal-subgroup > span,.portal-profile-heading small,.portal-search-results small,.portal-search-label) { color:var(--cm-muted); }
+html[data-theme=dark] :is(.portal-section:hover,.portal-section.is-selected,.portal-submenu-link:hover,.portal-submenu-link.is-active,.portal-profile-menu a:hover,.portal-search-results a:hover,.portal-sidebar-bottom) { background:var(--cm-raised); color:var(--cm-text); border-color:var(--cm-accent); }
+html[data-theme=dark] .portal-theme-toggle { background:var(--cm-raised); border-color:var(--cm-border); color:var(--cm-accent); }
+html[data-theme=dark] .portal-app :is(.card,.card-header,.card-body,.bg-white,.bg-light,.message-board,.checklist_container,.quick-links-card,.modal-content,.dropdown-menu,.list-group-item,.accordion-item,.accordion-button) { background:var(--cm-panel) !important; color:var(--cm-text); border-color:var(--cm-border) !important; }
+html[data-theme=dark] .portal-app main :is(.card,.bg-white.border) { background-color:var(--cm-panel) !important; border-color:var(--cm-border) !important; }
+html[data-theme=dark] .portal-app main :is(h1,h2,h3,h4,h5,h6),
+html[data-theme=dark] .portal-app :is(.text-dark,.text-body,.dropdown-item) { color:var(--cm-text) !important; }
+html[data-theme=dark] .portal-app :is(.text-muted,.text-secondary) { color:var(--cm-muted) !important; }
+html[data-theme=dark] .portal-app :is(input:not([type=submit]):not([type=button]):not([type=checkbox]):not([type=radio]),textarea,select) { background:var(--cm-bg) !important; color:var(--cm-text) !important; border-color:var(--cm-border) !important; }
+html[data-theme=dark] .portal-app :is(input,textarea)::placeholder { color:var(--cm-muted); opacity:1; }
+html[data-theme=dark] .portal-app :is(input,textarea,select):focus { outline-color:var(--cm-accent); border-color:var(--cm-accent) !important; }
+html[data-theme=dark] .portal-app .table { --bs-table-bg:var(--cm-panel); --bs-table-color:var(--cm-text); --bs-table-striped-color:var(--cm-text); --bs-table-striped-bg:var(--cm-raised); --bs-table-hover-color:var(--cm-text); --bs-table-hover-bg:var(--cm-raised); color:var(--cm-text); }
+html[data-theme=dark] .portal-app .table :is(th,td) { background-color:var(--cm-panel) !important; color:var(--cm-text); border-color:var(--cm-border) !important; }
+html[data-theme=dark] .portal-app .table th { background-color:var(--cm-raised) !important; }
+html[data-theme=dark] .portal-app :is(.btn-light,.btn-outline-secondary,.page-link) { background:var(--cm-raised); color:var(--cm-text); border-color:var(--cm-border); }
+html[data-theme=dark] .portal-app > footer { background:var(--cm-panel) !important; border-color:var(--cm-border); color:var(--cm-muted) !important; }
+html[data-theme=dark] .portal-app > footer :is(h5,.text-light) { color:var(--cm-muted) !important; }
+html[data-theme=dark] .wr-page { --wr-ink:var(--cm-text); --wr-muted:var(--cm-muted); --wr-line:var(--cm-border); --wr-accent:var(--cm-accent); }
+html[data-theme=dark] .wr-page :is(.wr-panel,.wr-button-secondary) { background:var(--cm-panel); color:var(--cm-text); border-color:var(--cm-border); }
+html[data-theme=dark] .portal-app .wr-page #work_desc { background:var(--cm-bg) !important; color:var(--cm-text); border-color:var(--cm-border) !important; }
+html[data-theme=dark] .wr-page :is(.wr-form-footer,.wr-tag,.wr-count,.wr-person-info img) { background:var(--cm-raised); color:var(--cm-muted); border-color:var(--cm-border); }
+html[data-theme=dark] .wr-page .wr-tasks li { color:var(--cm-muted); border-color:var(--cm-border); }
+html[data-theme=dark] .wr-page .wr-button-primary { background:#94d5cc; color:#102b2b; }
+html[data-theme=dark] .wr-page .wr-button-primary:hover { background:#b2e4de; }
+html[data-theme=dark] .wr-page input[type=file]::file-selector-button { background:var(--cm-raised); border-color:var(--cm-border); color:var(--cm-text); }
+html[data-theme=dark] .portal-app .wall-item { background:var(--cm-panel); border-color:var(--cm-border); color:var(--cm-text); }
+html[data-theme=dark] .portal-app :is(.wall-item-header,.forum-meta,.forum-preview,.forum-body,.forum-label,.forum-count,.forum-editor label,.forum-meta small,.forum-card-footer,.forum-empty,.forum-eyebrow,.points-toolbar small) { color:var(--cm-muted); }
+html[data-theme=dark] .portal-app :is(.forum-card h2 a,.points-summary>strong,.points-category strong) { color:var(--cm-accent); }
+html[data-theme=dark] .portal-app .forum-avatar { background:var(--cm-raised); color:var(--cm-accent); }
+html[data-theme=dark] .portal-app :is(.forum-card-footer,.forum-member) { border-color:var(--cm-border); }
+
+
+html[data-theme=dark] .portal-app main a:not(.btn):not(.badge):not(.page-link) { color:var(--cm-accent); }
+html[data-theme=dark] .portal-app .profile-header { background:var(--cm-raised); border-color:var(--cm-border); }

@@ -1,0 +1,79 @@
+/* Forum-specific styles. Loaded alongside app.css — relies on the same
+   CSS variables (--ink, --paper, --accent, etc.) defined there. */
+
+.forum-breadcrumb {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.forum-breadcrumb a { color: var(--muted); }
+
+.forum-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.forum-search {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.forum-search input { max-width: 320px; }
+
+.forum-search-row {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+}
+.forum-search-row:last-child { border-bottom: none; }
+.forum-search-row .forum-meta { display: block; margin-top: 2px; }
+
+.forum-category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.forum-category-card {
+  display: grid;
+  grid-template-columns: 1fr 160px 220px;
+  gap: 16px;
+  align-items: center;
+  background: var(--paper-raised);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+}
+.forum-category-card:hover { border-color: var(--accent); text-decoration: none; }
+.forum-category-card h3 { margin: 0 0 4px; font-size: 1rem; display: flex; align-items: center; gap: 8px; }
+.forum-category-desc { margin: 0; font-size: 0.85rem; color: var(--muted); }
+.forum-category-stats { display: flex; gap: 18px; font-size: 0.82rem; color: var(--muted); }
+.forum-category-latest { text-align: right; }
+
+.forum-post {
+  margin-bottom: 14px;
+}
+.forum-post-body {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  margin-bottom: 14px;
+  white-space: pre-wrap;
+}
+.forum-post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.forum-pagination {
+  display: flex;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+@media (max-width: 760px) {
+  .forum-category-card { grid-template-columns: 1fr; }
+  .forum-category-latest { text-align: left; }
+}

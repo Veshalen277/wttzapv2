@@ -1,0 +1,30 @@
+WTTZap sign-in page
+
+INSTALL
+Back up your website-root index.php. Merge index.php and the assets/ folder from
+this archive into the website root (the directory containing gist.php and the
+dashboard/ folder). Do NOT place index.php inside dashboard/.
+Keep your existing dashboard/config.php, gist.php and forgot_password.php.
+No database changes are included. No existing gallery images need to be deleted.
+
+Open preview.html locally to review the design; sign-in is disabled in the preview.
+The production PHP page retains the user_id, user_pass, login_btn and csrf_token
+field names. Passwords are not filtered, trimmed, coerced to numbers or saved in
+browser storage by this UI. Password reveal is optional and keyboard-accessible.
+The stadium attachment is included unchanged; CSS provides the grayscale, faded
+silhouette-like treatment. Appearance choices include System, Light, Dark,
+Morning and Afternoon, saved under the guest browser preference.
+
+AUTHENTICATION STILL NEEDS REVIEW
+The supplied index.php delegates authentication to gist.php, which has not been
+provided. This patch preserves that handler rather than guessing its SQL/session
+logic. Provide gist.php to finish investigating the numbers-only password issue
+and coordinate migration of legacy password hashes. No remembered-account button
+is shown because no verified remembered-account feature was supplied.
+
+VALIDATION
+JavaScript syntax, form field compatibility, asset paths and archive integrity
+checked. PHP authentication and browser visual rendering have not been tested.
+After installation, check invalid/valid login, CSRF handling, forgot-password link,
+password reveal, all themes, and mobile layout. Existing gist.php remains
+responsible for credential verification, login throttling and CSRF validation.

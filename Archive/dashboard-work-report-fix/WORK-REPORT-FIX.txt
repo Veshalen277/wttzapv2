@@ -1,0 +1,37 @@
+Work report rendering compatibility patch
+
+Install
+1. Back up the matching files on your server.
+2. Extract the dashboard/ folder into the parent of your existing dashboard folder,
+   merging folders and replacing the three matching PHP files. Do not replace the
+   entire dashboard directory. The tests/ file is optional on production.
+3. Open /dashboard/employee/emp_profile.php and check your saved draft, employee
+   details, and report form. No database migration is required for this patch.
+
+Changes
+- Reads the draft from the user row already loaded by the bootstrap; no additional
+  SELECT and no work_draft_updated_at dependency.
+- Renders bulletins in an isolated variable scope. The original widget overwrites
+  $user and $stmt in its caller (its supplied normalizer preserves numeric keys,
+  but shared-variable mutation is fragile).
+- A bulletin/feed exception discards that widget's partial HTML and displays a
+  notice while allowing the report form to render.
+- Other catchable work-report errors return HTTP 500 with a reference that matches
+  the PHP server error log. Internal error details are not shown to employees.
+
+Compatibility and validation
+This patch uses the employee bootstrap/view contract in the dashboard.zip supplied
+in this conversation. It replaces emp_profile.view.php, so compare it with any
+newer changes made only on your server before installation. It does not alter
+report submission logic, the separate My Profile route, points, or forum code.
+The earlier live error named work_draft_updated_at, which is absent from the
+supplied view and schema. The screenshot alone cannot confirm the current server
+exception. If the page still fails, send the error-log entry matching the displayed
+work- reference, plus your current employee/pages/emp_profile.bootstrap.php and
+emp_profile.view.php (remove credentials before sharing).
+
+Regression test: php dashboard/tests/work-report-render.php
+Tests exercise real view rendering with failed optional widgets, scope isolation,
+draft escaping, missing draft metadata, and healthy widget output without a DB.
+PHP is not installed in the build environment, so these tests and live database
+checks have NOT been run. Files and archive structure were checked locally.

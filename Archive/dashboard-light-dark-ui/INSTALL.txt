@@ -1,0 +1,24 @@
+LIGHT / DARK APPEARANCE UPDATE
+
+Back up matching files, then merge this dashboard folder into your existing
+dashboard directory. Do not replace the entire directory. No SQL changes needed.
+
+The Dark mode button is in the top-right header. Press it to switch appearances.
+An active/pressed button means dark mode is enabled. The initial setting follows
+the device preference until the user chooses. Preferences are stored per account
+in the current browser and shared between tabs; they do not sync between devices.
+If browser storage is blocked, switching still works for the current page.
+
+Includes theme styles for the shared navigation, forms, tables, profile components,
+work-report UI, forum and points. The prior work-report redesign is not bundled;
+its dark styles apply when that redesign is already installed. Other legacy pages
+with custom inline colours may still need individual adjustments.
+
+This patch replaces shared header.php, views/navigation.php and js/portal.js
+from the versions developed in this conversation, and adds css/color-modes.css
+and js/theme.js. Merge any newer server-only changes before uploading.
+
+Validation: JavaScript syntax and preference behavior checked (system default,
+stored selection, toggling, blocked storage, account isolation, cross-tab updates,
+and invalid saved values). PHP and browser visual tests were unavailable.
+Check your common pages in both modes after installation.
